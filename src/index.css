@@ -81,4 +81,14 @@ span {
     color: rgb(168, 29, 29);
 }
 
+.recipe-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* create 3 columns of equal width */
+    gap: 10px; /* add some space between the cards */
+  }
+  
+  .recipe {
+    grid-column: span 1; /* each recipe card spans 1 column */
+  }
+
 
