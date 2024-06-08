@@ -14,6 +14,8 @@ function Recipe() {
         </div>
         </div>
     )
+
+    
 }
 
 export default Recipe;
