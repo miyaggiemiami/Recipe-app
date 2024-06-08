@@ -5,7 +5,7 @@ class Details extends Component {
     state = {}
     render() {
         return (
-            <div>details testing</div>
+            <div>details  for testing</div>
         )
     };
 };
