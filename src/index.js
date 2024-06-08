@@ -12,10 +12,7 @@ import Recipe from './Recipe';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <>
     <App />
-    <Recipe />
-    </>
   </React.StrictMode>
 );
 
