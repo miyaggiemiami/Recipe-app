@@ -5,13 +5,17 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Recipes from './component/recipes';
 import Details from './component/Details';
+import Recipe from './Recipe';
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <>
     <App />
-    <Recipes />
-    <Details />
+    <Recipe />
+    </>
   </React.StrictMode>
 );
 
