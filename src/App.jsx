@@ -13,6 +13,8 @@ import Urdaburger from './Assets/Urdaburger.avif'
 import Fatcake from './Assets/Fatcake.jpeg'
 import Wings from './Assets/Wings.webp'
 import Toast from './Assets/Toast.jpeg'
+import Mgodu from './Assets/Mgodu.webp'
+import Muffins from './Assets/Muffins.webp'
 
 
 const App = () => {
@@ -94,15 +96,15 @@ const App = () => {
       />
 
       <Recipe
-        image={Tacos}
-        heading="Tacos al Pastor"
+        image={Mgodu}
+        heading="Mala Mogodu"
         description="Juicy pork tacos with pineapple, onion, and cilantro, served with a side of salsa and lime"
         cookingTime="45 minutes"
         className="mexican-recipe" // optional CSS class for customization
       />
       <Recipe
-        image={Tacos}
-        heading="Tacos al Pastor"
+        image={Muffins}
+        heading="Chocolate Muffins"
         description="Juicy pork tacos with pineapple, onion, and cilantro, served with a side of salsa and lime"
         cookingTime="45 minutes"
         className="mexican-recipe" // optional CSS class for customization
