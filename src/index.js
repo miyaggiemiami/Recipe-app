@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Recipes from './component/recipes';
-import Details from './component/Details';
+import RecipeDetails from './pages/RecipeDetails';
 import Recipe from './Recipe';
 
 
