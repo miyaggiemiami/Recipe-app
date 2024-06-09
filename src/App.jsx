@@ -9,6 +9,10 @@ import Recipe from './Recipe'
 import Lobster from './Assets/Lobster.jpeg'
 import Oysters from './Assets/Oysters.jpeg'
 import Pizzas from './Assets/Pizza.avif'
+import Urdaburger from './Assets/Urdaburger.avif'
+import Fatcake from './Assets/Fatcake.jpeg'
+import Wings from './Assets/Wings.webp'
+import Toast from './Assets/Toast.jpeg'
 
 
 const App = () => {
@@ -59,31 +63,31 @@ const App = () => {
         className="mexican-recipe" // optional CSS class for customization
       />
 
-<Recipe
-        image={pasta}
+    <Recipe
+        image={Urdaburger}
         heading="Pasta alla Sorrentina"
         description="A classic Italian dish featuring rigatoni, smoked Scamorza, fresh tomatoes, garlic, and basil in a simple yet flavorful sauce"
         cookingTime="1 Hour 15 minutes"
         className="italian-recipe" // optional CSS class for customization
       />
       <Recipe
-        image={Sushi}
-        heading="Sushi Rolls"
+        image={Wings}
+        heading="Buffalo Wings"
         description="Freshly prepared sushi rolls with spicy tuna, crab, and avocado"
         cookingTime="30 minutes"
         className="japanese-recipe" // optional CSS class for customization
       />
       <Recipe
-        image={Tacos}
-        heading="Tacos al Pastor"
+        image={Toast}
+        heading="Cheese tomato toast"
         description="Juicy pork tacos with pineapple, onion, and cilantro, served with a side of salsa and lime"
         cookingTime="45 minutes"
         className="mexican-recipe" // optional CSS class for customization
       />
 
       <Recipe
-        image={Tacos}
-        heading="Tacos al Pastor"
+        image={Fatcake}
+        heading="Fatcake"
         description="Juicy pork tacos with pineapple, onion, and cilantro, served with a side of salsa and lime"
         cookingTime="45 minutes"
         className="mexican-recipe" // optional CSS class for customization
