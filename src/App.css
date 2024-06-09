@@ -1,0 +1,117 @@
+body {
+    background-color: aliceblue;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    font-family: arial;
+    width: 600px;
+    margin: auto;
+    color: white;
+}
+.navLinks {
+    display: flex;
+    font-family: 'Poppins', arial;
+    background-color: #333;
+    padding: 8px;
+    align-items: center;
+    margin-top: 0;
+    justify-content: flex-end;
+    color: white;
+}
+
+ul li {
+    display: flex;
+    margin: 8px;
+}
+
+.navLinks a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: color .5s ease-in-out;
+    font-size: 22spx;
+}
+
+a:hover {
+    color: aqua;
+
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left: 20px;
+}
+
+.recipe-image {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #333333c9;
+}
+
+.recipe-card {
+    margin-bottom: 37px;
+    width: 400px;
+    box-shadow: 0 0 40px #333;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.testing {
+    display: flex;
+}
+
+.description {
+    color: #5f5f5f;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span {
+    font-weight: lighter;
+    font-size: 15px;
+    margin: 20px 0;
+    color: rgb(168, 29, 29);
+}
+
+.recipe-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px; 
+  }
+  
+  .recipe {
+    grid-column: span 1; /* each recipe card spans 1 column */
+  }
+
+
+  .hero {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.373)), url('./Assets/background2.avif'); /* replace with your background image */
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    margin-bottom: 50px;
+  }
+  
+  .hero h1 {
+    font-size: 130px;
+    margin-bottom: 10px;
+    font-family: Bold; font-family: Arial;
+
+  }
+  
+  .hero p {
+    font-size: 40px;
+    font-family: cursive;
+  }

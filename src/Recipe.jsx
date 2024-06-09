@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const Recipe = ({
     image,
     heading,
@@ -40,3 +41,5 @@ function Recipe(prop) {
 
 export default Recipe;
 >>>>>>> 7084ec5de451f56cdd5a637b0d3c92ca88d39f90
+=======
+>>>>>>> e896fd35891b01a9fdddb4f6b8dac208b634125e
