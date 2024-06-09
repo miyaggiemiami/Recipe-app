@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import Homepage from './pages/Homepage';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import RecipeDetails from './pages/RecipeDetails';
@@ -8,6 +7,13 @@ import Sushi from './Assets/Sushi.avif';
 import pasta from './Assets/pasta.jpeg';
 import Tacos from './Assets/Tacos.avif';
 import Pizzas from './Assets/Pizza.avif';
+import Wings from './Assets/Wings.webp';
+import Fatcake from './Assets/Fatcake.jpeg';
+
+
+import './App.css'; 
+
+
 
 
 const Recipe = ({
@@ -35,7 +41,7 @@ const App = () => {
     {
       id: 'pasta',
       title: 'Pasta alla Sorrentina',
-      description: 'A classic Italian dish featuring rigatoni, smoked Scamorza, fresh tomatoes, garlic, and basil in a simple yet flavorful sauce',
+      description: 'A classic Italian dish featuring rigatoni, smoked Scamorza, fresh tomatoes, garlic',
       ingredients: [
         'Rigatoni',
         'Smoked Scamorza',
@@ -53,6 +59,10 @@ const App = () => {
       image: pasta,
       className: 'italian-recipe',
     },
+
+   
+
+
     {
       id: 'sushi',
       title: 'Sushi Rolls',
@@ -76,6 +86,53 @@ const App = () => {
     },
 
     {
+      id: 'wings',
+      title: 'Buffalo Wings',
+      description: 'Spicy buffalo wings with a tangy sauce, served with celery and blue cheese dressing.',
+      ingredients: [
+        'Chicken wings',
+        'Hot sauce',
+        'Butter',
+        'Celery',
+        'Blue cheese dressing',
+      ],
+      steps: [
+        'Fry the chicken wings.',
+        'Mix hot sauce and butter for the sauce.',
+        'Toss the wings in the sauce.',
+        'Serve with celery and blue cheese dressing.',
+      ],
+      cookingTime: '30 minutes',
+      image: Wings,
+      className: 'american-recipe',
+    },
+
+    {
+      id: 'fatcake',
+      title: 'Fatcake',
+      description: 'A deliciously indulgent treat made from fried dough and filled with creamy custard.',
+      ingredients: [
+        'Flour',
+        'Sugar',
+        'Yeast',
+        'Milk',
+        'Custard filling',
+      ],
+      steps: [
+        'Prepare the dough.',
+        'Fry the dough until golden brown.',
+        'Fill with creamy custard.',
+        'Dust with powdered sugar before serving.',
+      ],
+      cookingTime: '1 Hour',
+      image: Fatcake,
+      className: 'dessert-recipe',
+    },
+
+
+
+
+    {
       id: 'pizzas',
       title: 'Arugula Pizzas',
       description: 'Pizzas topped with meat, arugula, and a tangy sauce.',
@@ -97,8 +154,6 @@ const App = () => {
       image: Pizzas,
       className: 'italian-recipe',
     },
-
-
     {
       id: 'tacos',
       title: 'Tacos al Pastor',
