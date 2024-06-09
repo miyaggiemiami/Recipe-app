@@ -2,13 +2,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Homepage from './pages/Homepage'
 import About from './pages/About'
 import Contact from './pages/Contact'
-<<<<<<< HEAD
-import logo from './images/logo.png'
-=======
 import Sushi from './Assets/Sushi.avif'
 import pasta from './Assets/pasta.jpeg'
 import Tacos from './Assets/Tacos.avif'
->>>>>>> 3c99864c77e8468ddeaea42fac02dbabd6e72029
 
 
 
@@ -20,29 +16,12 @@ const Recipe = ({
   className // optional CSS class for customization
 }) => {
   return (
-<<<<<<< HEAD
- <header>
- 
-
-  <nav>
-    <ul className='navLinks'>
-    <img src = {logo} className='logo' alt="" />
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact Us</a></li>
-    </ul>
-  </nav>
- </header>
-  
-  
-=======
     <div className={`recipe-card ${className}`}>
       <img src={image} alt="demo" className='recipe-image' />
       <h2>{heading}</h2>
       <p className='description'>{description}</p>
       <span>Cooking Time: {cookingTime}</span>
     </div>
->>>>>>> 3c99864c77e8468ddeaea42fac02dbabd6e72029
   );
 };
 
