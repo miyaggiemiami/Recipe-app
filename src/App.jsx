@@ -7,7 +7,8 @@ import RecipeDetails from './pages/RecipeDetails';
 import Sushi from './Assets/Sushi.avif';
 import pasta from './Assets/pasta.jpeg';
 import Tacos from './Assets/Tacos.avif';
-import Pizzas from './Assets/Pizza.avif'
+import Pizzas from './Assets/Pizza.avif';
+
 
 const Recipe = ({
   image,
