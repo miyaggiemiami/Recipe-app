@@ -23,7 +23,7 @@ const App = () => {
 
     <div>
 
-<section className="hero">
+<section className="hero">s
         <h1>Stella Clem</h1>
         <p>Best Recipe Providers</p>
       </section>

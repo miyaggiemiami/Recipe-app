@@ -1,5 +1,5 @@
 body {
-    background-color: aliceblue;
+    background-color: rgb(220, 220, 220);
 }
 
 .container {
@@ -10,11 +10,14 @@ body {
     width: 600px;
     margin: auto;
     color: white;
+    transition: transform .3s ease-in-out;
+    cursor: pointer;
 }
+
+
 .navLinks {
     display: flex;
     font-family: 'Poppins', arial;
-    background-color: #333;
     padding: 8px;
     align-items: center;
     margin-top: 0;
