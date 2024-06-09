@@ -7,6 +7,7 @@ import RecipeDetails from './pages/RecipeDetails';
 import Sushi from './Assets/Sushi.avif';
 import pasta from './Assets/pasta.jpeg';
 import Tacos from './Assets/Tacos.avif';
+import Pizzas from './Assets/Pizza.avif'
 
 const Recipe = ({
   image,
@@ -72,6 +73,31 @@ const App = () => {
       image: Sushi,
       className: 'japanese-recipe',
     },
+
+    {
+      id: 'pizzas',
+      title: 'Arugula Pizzas',
+      description: 'Pizzas topped with meat, arugula, and a tangy sauce.',
+      ingredients: [
+        'Pizza dough',
+        'Tomato sauce',
+        'Arugula',
+        'Meat',
+        'Cheese',
+      ],
+      steps: [
+        'Prepare the pizza dough.',
+        'Spread tomato sauce on the dough.',
+        'Add meat and cheese.',
+        'Bake until crust is golden.',
+        'Top with fresh arugula before serving.',
+      ],
+      cookingTime: '45 minutes',
+      image: Pizzas,
+      className: 'italian-recipe',
+    },
+
+
     {
       id: 'tacos',
       title: 'Tacos al Pastor',
