@@ -5,15 +5,17 @@ class Recipes extends Component {
   
   render() {
     return ( 
-      <div className='container'>
+     <div className="firstContainer">
+       <div className='container'>
 
-       <h1> StellaClem Recipes</h1>
-        <h2>Pasta</h2>
-        <img src="" alt="pasta" className="food-image" />
-        <p>Preperation Time: <span>30 minutes</span></p>
-        <p>cooking Time: <span>45 minutes</span></p>
-        <p>Total Time: <span>1 hour 15 minutes</span></p>
-      </div>
+<h1> StellaClem Recipes</h1>
+ <h2>Pasta</h2>
+ <img src="" alt="pasta" className="food-image" />
+ <p>Preperation Time: <span>30 minutes</span></p>
+ <p>cooking Time: <span>45 minutes</span></p>
+ <p>Total Time: <span>1 hour 15 minutes</span></p>
+</div>
+     </div>
     )
   }
 }

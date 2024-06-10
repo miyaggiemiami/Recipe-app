@@ -1,32 +1,41 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 
 const RecipeDetails = ({ recipes }) => {
   const { recipeId } = useParams();
   const recipe = recipes.find(r => r.id === recipeId);
+  const navigate = useNavigate();
 
   if (!recipe) {
     return <div>Recipe not found</div>;
   }
 
+  const handleBackClick = () => {
+    navigate('/');
+  };
+
   return (
-    <div>
+    <div className='detail-page'>
       <h1>{recipe.title}</h1>
-      <img src={recipe.image} alt={recipe.title} />
+      <img src={recipe.image} alt={recipe.title} className='clement'/>
       <p>{recipe.description}</p>
-      <h2>Ingredients</h2>
-      <ul>
-        {recipe.ingredients.map((ingredient, index) => (
+
+
+      <h2  className='start's>Ingredients</h2>
+      <p>
+      {recipe.ingredients.map((ingredient, index) => (
           <li key={index}>{ingredient}</li>
         ))}
-      </ul>
-      <h2>Preparation Steps</h2>
-      <ol>
-        {recipe.steps.map((step, index) => (
+      </p>
+      <h2  className='start'>Instructions</h2>
+     <p>
+     {recipe.steps.map((step, index) => (
           <li key={index}>{step}</li>
         ))}
-      </ol>
+     </p>
       <span>Cooking Time: {recipe.cookingTime}</span>
+      <button onClick={handleBackClick} className='back-button'>Back to Home Page</button>
+      
     </div>
   );
 };
