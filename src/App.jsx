@@ -1,3 +1,5 @@
+
+
 import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import About from './pages/About';
@@ -9,12 +11,7 @@ import Tacos from './Assets/Tacos.avif';
 import Pizzas from './Assets/Pizza.avif';
 import Wings from './Assets/Wings.webp';
 import Fatcake from './Assets/Fatcake.jpeg';
-
-
 import './App.css'; 
-
-
-
 
 const Recipe = ({
   image,
@@ -59,10 +56,6 @@ const App = () => {
       image: pasta,
       className: 'italian-recipe',
     },
-
-   
-
-
     {
       id: 'sushi',
       title: 'Sushi Rolls',
@@ -84,7 +77,6 @@ const App = () => {
       image: Sushi,
       className: 'japanese-recipe',
     },
-
     {
       id: 'wings',
       title: 'Buffalo Wings',
@@ -106,7 +98,6 @@ const App = () => {
       image: Wings,
       className: 'american-recipe',
     },
-
     {
       id: 'fatcake',
       title: 'Fatcake',
@@ -128,10 +119,6 @@ const App = () => {
       image: Fatcake,
       className: 'dessert-recipe',
     },
-
-
-
-
     {
       id: 'pizzas',
       title: 'Arugula Pizzas',
@@ -179,6 +166,19 @@ const App = () => {
 
   return (
     <BrowserRouter>
+      <div className="hero-container">
+        <nav className="navbar">
+          <ul>
+            <li><Link to="/">Recipes</Link></li>
+            <li><Link to="/about">About Us</Link></li>
+            <li><Link to="/contact">Contact Us</Link></li>
+          </ul>
+        </nav>
+        <div className="hero">
+          <h1>Stella Clem Recipes</h1>
+          <p>Explore our delicious recipes and cooking guides</p>
+        </div>
+      </div>
       <Routes>
         <Route path="/" element={
           <div className="recipe-container">
@@ -203,9 +203,4 @@ const App = () => {
   );
 };
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> e896fd35891b01a9fdddb4f6b8dac208b634125e
 export default App;

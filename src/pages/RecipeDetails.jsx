@@ -1,18 +1,23 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 
 const RecipeDetails = ({ recipes }) => {
   const { recipeId } = useParams();
+  const navigate = useNavigate();
   const recipe = recipes.find(r => r.id === recipeId);
 
   if (!recipe) {
     return <div>Recipe not found</div>;
   }
 
+  const handleBackClick = () => {
+    navigate('/');
+  };
+
   return (
     <div>
       <h1>{recipe.title}</h1>
-      <img src={recipe.image} alt={recipe.title} />
+      <img  src={recipe.image}  alt={recipe.title}  />
       <p>{recipe.description}</p>
       <h2>Ingredients</h2>
       <ul>
@@ -27,6 +32,9 @@ const RecipeDetails = ({ recipes }) => {
         ))}
       </ol>
       <span>Cooking Time: {recipe.cookingTime}</span>
+      <br />
+      <button onClick={handleBackClick}>Back to Home Page</button>
+      <button onClick={handleBackClick}>Back to Home Page</button>
     </div>
   );
 };
