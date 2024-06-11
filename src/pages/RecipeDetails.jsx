@@ -34,7 +34,7 @@ const RecipeDetails = ({ recipes }) => {
       <span>Cooking Time: {recipe.cookingTime}</span>
       <br />
       <button onClick={handleBackClick}>Back to Home Page</button>
-      <button onClick={handleBackClick}>Back to Home Page</button>
+     
     </div>
   );
 };
