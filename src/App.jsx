@@ -9,6 +9,7 @@ import Tacos from './Assets/Tacos.avif';
 import Pizzas from './Assets/Pizza.avif';
 import Wings from './Assets/Wings.webp';
 import Fatcake from './Assets/Fatcake.jpeg';
+import Kota from './Assets/kota.jpeg'
 
 
 
@@ -142,7 +143,7 @@ const App = () => {
         'Prepare the yeast dough by combining 1 package of active dry yeast, 3 1/2 cups of all-purpose flour, 1 teaspoon of salt, and 1 cup of warm water in a large mixing bowl. Mix until a smooth dough forms',
         'Fill the fried dough with a creamy custard made from 1 cup of heavy cream, 1/2 cup of granulated sugar, and 1/4 teaspoon of vanilla extract.'
       ],
-      cookingTime: '1 Hour',
+      cookingTime: '23 minutes',
       image: Fatcake,
       className: 'dessert-recipe',
     },
